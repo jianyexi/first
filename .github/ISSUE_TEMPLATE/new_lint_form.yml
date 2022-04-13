@@ -12,7 +12,6 @@ body:
     id: Lintruledescription
     attributes:
       label: Lint rule description
-      description: describe the lint rule
       placeholder: please add some description for the lint rule
     validations:
       required: true
@@ -30,7 +29,6 @@ body:
     id: Category
     attributes:
       label: Category
-      description: which 
       options:
         - SDK
         - ARM
