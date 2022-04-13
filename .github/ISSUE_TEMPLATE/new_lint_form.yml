@@ -9,9 +9,9 @@ body:
       value: |
         Thanks for taking the time to fill out this new rule form!
   - type: textarea
-    id: lint rule description
+    id: lintruledescription
     attributes:
-      label: description ?
+      label: lint rule description
       description: describe the lint rule
       placeholder: please add some description for the lint rule
     validations:
@@ -20,7 +20,7 @@ body:
   - type: textarea
     id: swaggerExampleEelated
     attributes:
-      label: example ?
+      label: related swagger example
       description: add an example for this rule
       placeholder: please add some example for the lint rule
     validations:
@@ -67,7 +67,7 @@ body:
   - type: textarea
     id: impact
     attributes:
-      label: the impact 
+      label: what't the impact if breaking the rule
       description: what't the impact if breaking the rule
     validations:
       required: true
