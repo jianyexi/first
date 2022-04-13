@@ -9,9 +9,9 @@ body:
       value: |
         Thanks for taking the time to fill out this new rule form!
   - type: textarea
-    id: lintruledescription
+    id: Lintruledescription
     attributes:
-      label: lint rule description
+      label: Lint rule description
       description: describe the lint rule
       placeholder: please add some description for the lint rule
     validations:
@@ -20,7 +20,7 @@ body:
   - type: textarea
     id: swaggerExampleEelated
     attributes:
-      label: related swagger example
+      label: Related swagger example
       description: add an example for this rule
       placeholder: please add some example for the lint rule
     validations:
@@ -40,7 +40,7 @@ body:
   - type: dropdown
     id: Severitylevel
     attributes:
-      label: specify the severity level
+      label: Severity level
       options:
         - Error
         - Warning
@@ -49,7 +49,7 @@ body:
   - type: dropdown
     id: AppliesTo
     attributes:
-      label: arm or dataplane or rpaas 
+      label: Applies to
       multiple: true
       options:
         - Management plane API spec
@@ -60,14 +60,14 @@ body:
   - type: textarea
     id: howtofix
     attributes:
-      label: how to fix 
+      label: How to fix the violation
       description: please descripe how to fix
     validations:
       required: true
   - type: textarea
     id: impact
     attributes:
-      label: what't the impact if breaking the rule
+      label: What't the impact if breaking the rule
       description: what't the impact if breaking the rule
     validations:
       required: true
