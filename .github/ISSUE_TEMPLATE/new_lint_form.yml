@@ -7,7 +7,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this new rule form!
+        This form is to collect lint rule candidate for swagger validation. We will evaluate collected candidates in Swagger reviewer meeting in regular basis. For qualified candidates, swagger team will either prioritize to add them to validation tool, or document them as manual rules must be conformed in swagger authorization. If any question, please mail to Swagger and Tools Team (vscswagger@microsoft.com).
+        To avoid duplicate, please refer to the following two documents for all existing rules:
+        Automated guidelines: https://github.com/Azure/azure-rest-api-specs/blob/master/documentation/openapi-authoring-automated-guidelines.md
+        Manual guidelines: https://github.com/Azure/azure-rest-api-specs/blob/master/documentation/openapi-authoring-manual-guidelines.md
   - type: textarea
     id: Lintruledescription
     attributes:
