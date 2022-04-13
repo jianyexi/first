@@ -8,14 +8,6 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this new rule form!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
   - type: textarea
     id: lint rule description
     attributes:
@@ -27,7 +19,7 @@ body:
       required: true
       
   - type: textarea
-    id: swagger example related
+    id: swagger-example-related
     attributes:
       label: example ?
       description: add an example for this rule
@@ -48,7 +40,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: Severity level
+    id: Severitylevel
     attributes:
       label: specify the severity level
       options:
@@ -68,7 +60,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: how-to-fix
+    id: howtofix
     attributes:
       label: how to fix 
       description: please descripe how to fix
