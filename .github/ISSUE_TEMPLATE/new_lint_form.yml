@@ -14,17 +14,15 @@ body:
       label: description ?
       description: describe the lint rule
       placeholder: please add some description for the lint rule
-      value: ""
     validations:
       required: true
       
   - type: textarea
-    id: swagger-example-related
+    id: swaggerExampleEelated
     attributes:
       label: example ?
       description: add an example for this rule
       placeholder: please add some example for the lint rule
-      value: ""
     validations:
       required: true
       
