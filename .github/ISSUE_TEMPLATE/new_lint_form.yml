@@ -1,14 +1,13 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
+name: New Lint Rule Request
+description: request a new lint rule
+title: "[new rule]: "
+labels: ["linter", "rule"]
+assignees: jianyxi,ruoxuanwang
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this new rule form!
   - type: input
     id: contact
     attributes:
@@ -18,45 +17,67 @@ body:
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: lint rule description
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: description ?
+      description: describe the lint rule
+      placeholder: please add some description for the lint rule
+      value: ""
     validations:
       required: true
-  - type: dropdown
-    id: version
+      
+  - type: textarea
+    id: swagger example related
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: example ?
+      description: add an example for this rule
+      placeholder: please add some example for the lint rule
+      value: ""
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: Category
+    attributes:
+      label: Category
+      description: which 
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - SDK
+        - ARM
+        - Documentation
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: Severity level
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: specify the severity level
+      options:
+        - Error
+        - Warning
+    validations:
+      required: true
+  - type: dropdown
+    id: AppliesTo
+    attributes:
+      label: arm or dataplane or rpaas 
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - Management plane API spec
+        - Data plane API spec
+        - RPaaS API spec
+    validations:
+      required: true
   - type: textarea
-    id: logs
+    id: how-to-fix
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
+      label: how to fix 
+      description: please descripe how to fix
+    validations:
+      required: true
+  - type: textarea
+    id: impact
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: the impact 
+      description: what't the impact if breaking the rule
+    validations:
+      required: true
